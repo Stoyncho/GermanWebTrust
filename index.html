@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WebTrust Builders - DSGVO-konforme Websites für lokale Unternehmen in Berlin. Faire Preise, persönlicher Support, rechtssicher.">
+    <meta name="keywords" content="Webdesign Berlin, DSGVO Website, lokale Unternehmen, Website erstellen, SEO Berlin">
+    <meta name="author" content="WebTrust Builders GmbH">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="de">
+    <meta name="geo.region" content="DE-BE">
+    <meta name="geo.placename" content="Berlin">
+
+    <meta property="og:title" content="WebTrust Builders - DSGVO-konforme Websites">
+    <meta property="og:description" content="Professionelle Websites für lokale Unternehmen in Berlin.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WebTrust Builders - DSGVO-konforme Websites">
+    <meta name="twitter:description" content="Professionelle Websites für lokale Unternehmen in Berlin.">
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+    <title>WebTrust Builders | DSGVO-konforme Websites für lokale Unternehmen</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <h4>🍪 Wir verwenden Cookies</h4>
+                <p>Wir nutzen Cookies für die beste Nutzererfahrung.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button class="cookie-btn cookie-accept" onclick="acceptCookies()">Alle akzeptieren</button>
+                <button class="cookie-btn cookie-decline" onclick="declineCookies()">Nur notwendige</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <div class="logo-icon">🛡️</div>
+                    <span class="logo-text">WebTrust<span class="text-primary">Builders</span></span>
+                </a>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#leistungen" class="nav-link">Leistungen</a></li>
+                    <li class="nav-item"><a href="#preise" class="nav-link">Preise</a></li>
+                    <li class="nav-item"><a href="#referenzen" class="nav-link">Referenzen</a></li>
+                    <li class="nav-item"><a href="#kontakt" class="nav-link">Kontakt</a></li>
+                </ul>
+
+                <div class="header-actions">
+                    <div class="trust-badge-header">
+                        <span class="phone"><i class="fas fa-phone"></i> 030 1234 5678</span>
+                        <span class="badge-rating">⭐ 4.9</span>
+                    </div>
+                    <a href="#kontakt" class="btn btn-primary btn-sm">Beratung</a>
+                </div>
+
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg">
+                <div class="gradient-orb orb-1"></div>
+                <div class="gradient-orb orb-2"></div>
+            </div>
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content" data-aos="fade-right">
+                        <div class="trust-flash">
+                            <span class="trust-pill"><i class="fas fa-check-circle"></i> DSGVO-zertifiziert</span>
+                            <span class="trust-pill"><i class="fas fa-map-marker-alt"></i> Made in Berlin</span>
+                        </div>
+
+                        <h1 class="hero-title">
+                            Ihr vertrauensvoller Partner für
+                            <span class="text-gradient">professionelle Websites</span>
+                            <span class="typed-text"></span>
+                        </h1>
+
+                        <p class="hero-subtitle">
+                            Wir erstellen DSGVO-konforme Websites für lokale Unternehmen in Berlin & Deutschland. 
+                            Keine versteckten Kosten, persönlicher Support, rechtssicher.
+                        </p>
+
+                        <ul class="usp-list">
+                            <li class="usp-item">
+                                <span class="usp-icon"><i class="fas fa-check"></i></span>
+                                <span><strong>Rechtssicher</strong> – Impressum & Datenschutz inklusive</span>
+                            </li>
+                            <li class="usp-item">
+                                <span class="usp-icon"><i class="fas fa-check"></i></span>
+                                <span><strong>Schnell</strong> – Lieferung in 5-7 Werktagen</span>
+                            </li>
+                            <li class="usp-item">
+                                <span class="usp-icon"><i class="fas fa-check"></i></span>
+                                <span><strong>Transparent</strong> – Feste Preise, keine Abos</span>
+                            </li>
+                        </ul>
+
+                        <div class="hero-cta">
+                            <a href="#preise" class="btn btn-primary btn-large">
+                                Preise ansehen
+                                <i class="fas fa-arrow-right btn-icon"></i>
+                            </a>
+                            <a href="#kontakt" class="btn btn-outline btn-large">
+                                <i class="fas fa-calendar-check"></i>
+                                Kostenloses Gespräch
+                            </a>
+                        </div>
+
+                        <div class="hero-stats">
+                            <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                                <span class="stat-number" data-target="50">0</span>
+                                <span class="stat-label">zufriedene Kunden</span>
+                            </div>
+                            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                                <span class="stat-number" data-target="4.9" data-decimals="1">0</span>
+                                <span class="stat-label">⭐ Google Bewertungen</span>
+                            </div>
+                            <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                                <span class="stat-number" data-target="100">0</span>
+                                <span class="stat-suffix">%</span>
+                                <span class="stat-label">DSGVO-konform</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual" data-aos="fade-left">
+                        <div class="hero-image-wrapper">
+                            <div class="browser-mockup">
+                                <div class="browser-header">
+                                    <div class="browser-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="browser-address">webtrust-builders.de</div>
+                                </div>
+                                <div class="browser-content">
+                                    <div class="mockup-website">
+                                        <div class="mockup-nav"></div>
+                                        <div class="mockup-hero">
+                                            <div class="mockup-text-line short"></div>
+                                            <div class="mockup-text-line long"></div>
+                                            <div class="mockup-button"></div>
+                                        </div>
+                                        <div class="mockup-grid">
+                                            <div class="mockup-card"></div>
+                                            <div class="mockup-card"></div>
+                                            <div class="mockup-card"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="floating-badge badge-1" data-aos="zoom-in" data-aos-delay="400">
+                                <div class="badge-icon">🏆</div>
+                                <div class="badge-text">
+                                    <strong>IHK</strong>
+                                    <span>geprüft</span>
+                                </div>
+                            </div>
+
+                            <div class="floating-badge badge-2" data-aos="zoom-in" data-aos-delay="500">
+                                <div class="badge-icon">🔒</div>
+                                <div class="badge-text">
+                                    <strong>SSL</strong>
+                                    <span>verschlüsselt</span>
+                                </div>
+                            </div>
+
+                            <div class="floating-badge badge-3" data-aos="zoom-in" data-aos-delay="600">
+                                <div class="badge-icon">🇩🇪</div>
+                                <div class="badge-text">
+                                    <strong>Server</strong>
+                                    <span>in Deutschland</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-wave">
+                <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="#F8F9FA"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Trust Section -->
+        <section class="trust-section" id="leistungen">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">Vertrauen, das zählt</span>
+                    <h2 class="section-title">Warum Kunden uns vertrauen</h2>
+                    <p class="section-description">
+                        Wir nehmen Ihre Sicherheit ernst. Deshalb erfüllen wir alle deutschen 
+                        und europäischen Standards für Ihre Website.
+                    </p>
+                </div>
+
+                <div class="trust-grid">
+                    <div class="trust-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="trust-card-icon">
+                            <div class="icon-circle">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                        </div>
+                        <h3 class="trust-card-title">100% DSGVO-konform</h3>
+                        <p class="trust-card-text">
+                            Alle Websites werden nach deutschem Datenschutzrecht erstellt.
+                            Impressum, Datenschutz und Cookie-Banner inklusive.
+                        </p>
+                        <ul class="trust-card-list">
+                            <li><i class="fas fa-check"></i> Rechtssichere Texte</li>
+                            <li><i class="fas fa-check"></i> DSGVO-konforme Formulare</li>
+                            <li><i class="fas fa-check"></i> Cookie Consent</li>
+                        </ul>
+                    </div>
+
+                    <div class="trust-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="trust-card-icon">
+                            <div class="icon-circle orange">
+                                <i class="fas fa-server"></i>
+                            </div>
+                        </div>
+                        <h3 class="trust-card-title">Hosting in Deutschland</h3>
+                        <p class="trust-card-text">
+                            Ihre Daten bleiben in Deutschland. Wir hosten auf zertifizierten 
+                            Servern in Frankfurt und Berlin.
+                        </p>
+                        <ul class="trust-card-list">
+                            <li><i class="fas fa-check"></i> TÜV-zertifizierte Rechenzentren</li>
+                            <li><i class="fas fa-check"></i> Tägliche Backups</li>
+                            <li><i class="fas fa-check"></i> SSL-Verschlüsselung</li>
+                        </ul>
+                    </div>
+
+                    <div class="trust-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="trust-card-icon">
+                            <div class="icon-circle red">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                        </div>
+                        <h3 class="trust-card-title">Persönlicher Support</h3>
+                        <p class="trust-card-text">
+                            Keine Chatbots, keine Hotlines. Sie haben einen festen 
+                            Ansprechpartner in Berlin.
+                        </p>
+                        <ul class="trust-card-list">
+                            <li><i class="fas fa-check"></i> Fester Ansprechpartner</li>
+                            <li><i class="fas fa-check"></i> < 24h Reaktionszeit</li>
+                            <li><i class="fas fa-check"></i> Telefonische Erreichbarkeit</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="certificates" data-aos="fade-up">
+                    <div class="certificates-track">
+                        <div class="certificate-item"><div class="cert-box">IHK</div></div>
+                        <div class="certificate-item"><div class="cert-box">Google Partner</div></div>
+                        <div class="certificate-item"><div class="cert-box">DSGVO</div></div>
+                        <div class="certificate-item"><div class="cert-box">TÜV</div></div>
+                        <div class="certificate-item"><div class="cert-box">SSL</div></div>
+                        <div class="certificate-item"><div class="cert-box">ISO 27001</div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section" id="preise">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">Transparente Preise</span>
+                    <h2 class="section-title">Fair kalkuliert – ohne versteckte Kosten</h2>
+                    <p class="section-description">
+                        Wählen Sie das passende Paket für Ihr Business. Alle Preise verstehen sich 
+                        einmalig zzgl. monatlicher Servicegebühr.
+                    </p>
+                </div>
+
+                <div class="pricing-toggle" data-aos="fade-up">
+                    <span class="toggle-label" id="monthlyLabel">Monatlich</span>
+                    <label class="switch">
+                        <input type="checkbox" id="pricingToggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="toggle-label active" id="yearlyLabel">Jährlich <span class="savings">-20%</span></span>
+                </div>
+
+                <div class="pricing-grid">
+                    <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="pricing-badge">Für Starter</div>
+                        <div class="pricing-header">
+                            <div class="pricing-icon">🥉</div>
+                            <h3 class="pricing-title">EINSTIEG</h3>
+                            <div class="pricing-price">
+                                <span class="price-one-time">€1.490</span>
+                                <span class="price-label">einmalig</span>
+                            </div>
+                            <div class="pricing-monthly">
+                                <span class="monthly-price" data-monthly="39" data-yearly="33">€39</span>
+                                <span class="monthly-label">/Monat</span>
+                            </div>
+                        </div>
+                        <div class="pricing-target">
+                            <span class="target-label">Perfekt für:</span>
+                            <span>Cafés, Friseure, Schlüsseldienste</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li class="feature-item"><i class="fas fa-check feature-icon"></i><span>Bis zu 3 Seiten</span></li>
+                            <li class="feature-item"><i class="fas fa-check feature-icon"></i><span>DSGVO-konform</span></li>
+                            <li class="feature-item"><i class="fas fa-check feature-icon"></i><span>Google Business Profile</span></li>
+                            <li class="feature-item"><i class="fas fa-check feature-icon"></i><span>30 Min. Support/Monat</span></li>
+                            <li class="feature-item featured"><i class="fas fa-star feature-icon"></i><span><strong>Wert:</strong> €2.490</span></li>
+                        </ul>
+                        <div class="pricing-footer">
+                            <a href="#kontakt" class="btn btn-outline btn-block" onclick="selectPackage('EINSTIEG')">Paket auswählen</a>
+                        </div>
+                    </div>
+
+                    <div class="pricing-card popular" data-aos="fade-up" data-aos-delay="200">
+                        <div class="pricing-badge popular-badge">⭐ Bestseller</div>
+                        <div class="pricing-header">
+                            <div class="pricing-icon">🥈</div>
+                            <h3 class="pricing-title">WACHSTUM</h3>
+                            <div class="pricing-price">
+                                <span class="price-one-time">€2.990</span>
+                                <span class="price-label">einmalig</span>
+                            </div>
+                            <div class="pricing-monthly">
+                                <span class="monthly-price" data-monthly="59" data-yearly="49">€59</span>
+                                <span class="monthly-label">/Monat</span>
+                            </div>
+                        </div>
+                        <div class="pricing-target">
+                            <span class="target-label">Perfekt für:</span>
+                            <span>Apotheken, Restaurants, Einzelhandel</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li class="feature-item"><i class="fas fa-check feature-icon"></i><span>Bis zu 7 Seiten</span></li>
+                            <li class="feature-item"><i class="fas fa-check feature-icon"></i><span>WordPress CMS</span></li>
+                            <li class="feature-item"><i class="fas fa-check feature-icon"></i><span>Professionelle Texte</span></li>
+                            <li class="feature-item"><i class="fas fa-check feature-icon"></i><span>2 Stunden Support/Monat</span></li>
+                            <li class="feature-item"><i class="fas fa-check feature-icon"></i><span>Google Analytics</span></li>
+                            <li class="feature-item featured"><i class="fas fa-star feature-icon"></i><span><strong>Wert:</strong> €4.990</span></li>
+                        </ul>
+                        <div class="pricing-footer">
+                            <a href="#kontakt" class="btn btn-primary btn-block" onclick="selectPackage('WACHSTUM')">Paket auswählen</a>
+                        </div>
+                    </div>
+
+                    <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="pricing-badge">Für Profis</div>
+                        <div class="pricing-header">
+                            <div class="pricing-icon">🥇</div>
+                            <h3 class="pricing-title">ERFOLG</h3>
+                            <div class="pricing-price">
+                                <span class="price-one-time">€4.990</span>
+                                <span class="price-label">einmalig</span>
+                            </div>
+                            <div class="pricing-monthly">
+                                <span class="monthly-price" data-monthly="99" data-yearly="82">€99</span>
+                                <span class="monthly-label">/Monat</span>
+                            </div>
+                        </div>
+                        <div class="pricing-target">
+                            <span class="target-label">Perfekt für:</span>
+                            <span>Baufirmen, Zahnärzte, Kanzleien</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li class="feature-item"><i class="fas fa-check feature-icon"></i><span>Bis zu 15 Seiten</span></li>
+                            <li class="feature-item"><i class="fas fa-check feature-icon"></i><span>Local SEO für 5 Keywords</span></li>
+                            <li class="feature-item"><i class="fas fa-check feature-icon"></i><span>2 Blog-Artikel/Monat</span></li>
+                            <li class="feature-item"><i class="fas fa-check feature-icon"></i><span>Online-Terminbuchung</span></li>
+                            <li class="feature-item"><i class="fas fa-check feature-icon"></i><span>4 Stunden Support/Monat</span></li>
+                            <li class="feature-item featured"><i class="fas fa-star feature-icon"></i><span><strong>Wert:</strong> €7.990</span></li>
+                        </ul>
+                        <div class="pricing-footer">
+                            <a href="#kontakt" class="btn btn-outline btn-block" onclick="selectPackage('ERFOLG')">Paket auswählen</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-guarantee" data-aos="fade-up">
+                    <div class="guarantee-box">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <strong>14 Tage Geld-zurück-Garantie</strong>
+                            <span>Nicht zufrieden? Wir erstatten Ihr Geld.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section" id="referenzen">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">Kundenstimmen</span>
+                    <h2 class="section-title">Das sagen unsere Kunden</h2>
+                    <p class="section-description">Über 50 zufriedene Kunden vertrauen auf WebTrust Builders.</p>
+                </div>
+
+                <div class="google-summary" data-aos="fade-up">
+                    <div class="google-badge">
+                        <div class="google-logo">G</div>
+                        <div class="google-rating">
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="rating-text">
+                                <span class="rating-number">4.9</span>
+                                <span class="rating-max">/5</span>
+                                <span class="rating-count">(47 Bewertungen)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonials-slider swiper" data-aos="fade-up">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-header">
+                                    <div class="testimonial-avatar">MS</div>
+                                    <div class="testimonial-info">
+                                        <h4>Markus Schmidt</h4>
+                                        <p>Inhaber, Café Mozart Berlin</p>
+                                        <div class="testimonial-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-body">
+                                    <i class="fas fa-quote-left quote-icon"></i>
+                                    <p>"Endlich eine Agentur, die versteht, was wir brauchen. DSGVO-konform, schnell und zu einem fairen Preis. Die Zusammenarbeit war hervorragend!"</p>
+                                </div>
+                                <div class="testimonial-footer">
+                                    <span class="verified"><i class="fas fa-check-circle"></i> Verifiziert</span>
+                                    <span class="date">vor 2 Monaten</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-header">
+                                    <div class="testimonial-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">SW</div>
+                                    <div class="testimonial-info">
+                                        <h4>Dr. Sabine Weber</h4>
+                                        <p>Inhaberin, Apotheke am Rathaus</p>
+                                        <div class="testimonial-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-body">
+                                    <i class="fas fa-quote-left quote-icon"></i>
+                                    <p>"Als Apotheke haben wir besondere Anforderungen an Datenschutz. WebTrust hat alles perfekt umgesetzt. Die Patienten können jetzt einfach online Rezepte vorbestellen."</p>
+                                </div>
+                                <div class="testimonial-footer">
+                                    <span class="verified"><i class="fas fa-check-circle"></i> Verifiziert</span>
+                                    <span class="date">vor 1 Woche</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-header">
+                                    <div class="testimonial-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">TW</div>
+                                    <div class="testimonial-info">
+                                        <h4>Thomas Wagner</h4>
+                                        <p>Geschäftsführer, Wagner Bau GmbH</p>
+                                        <div class="testimonial-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-body">
+                                    <i class="fas fa-quote-left quote-icon"></i>
+                                    <p>"Die neue Website hat unseren Umsatz um 30% gesteigert. Lokale Kunden finden uns jetzt viel leichter. Absolut empfehlenswert!"</p>
+                                </div>
+                                <div class="testimonial-footer">
+                                    <span class="verified"><i class="fas fa-check-circle"></i> Verifiziert</span>
+                                    <span class="date">vor 3 Monaten</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">Häufige Fragen</span>
+                    <h2 class="section-title">Alles, was Sie wissen müssen</h2>
+                    <p class="section-description">Antworten auf die wichtigsten Fragen zu unseren Leistungen.</p>
+                </div>
+
+                <div class="faq-grid" data-aos="fade-up">
+                    <div class="faq-accordion">
+                        <div class="faq-item active">
+                            <button class="faq-question">
+                                <span class="question-text"><i class="fas fa-question-circle"></i> Ist die Website wirklich DSGVO-konform?</span>
+                                <span class="question-icon"><i class="fas fa-chevron-down"></i></span>
+                            </button>
+                            <div class="faq-answer" style="max-height: 500px;">
+                                <div class="answer-content">
+                                    <p>Ja, zu 100%! Wir garantieren volle DSGVO-Konformität:</p>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Rechtssicheres Impressum nach §5 TMG</li>
+                                        <li><i class="fas fa-check"></i> DSGVO-konforme Datenschutzerklärung</li>
+                                        <li><i class="fas fa-check"></i> Cookie-Banner mit Opt-out</li>
+                                        <li><i class="fas fa-check"></i> SSL-Verschlüsselung</li>
+                                    </ul>
+                                    <p class="highlight">Wir übernehmen die Haftung für alle Rechtstexte.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span class="question-text"><i class="fas fa-euro-sign"></i> Was kostet der laufende Betrieb?</span>
+                                <span class="question-icon"><i class="fas fa-chevron-down"></i></span>
+                            </button>
+                            <div class="faq-answer">
+                                <div class="answer-content">
+                                    <p>Die monatliche Gebühr beträgt zwischen €39 und €99, je nach Paket. Darin enthalten sind:</p>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Hosting auf deutschen Servern</li>
+                                        <li><i class="fas fa-check"></i> SSL-Zertifikat</li>
+                                        <li><i class="fas fa-check"></i> Tägliche Backups</li>
+                                        <li><i class="fas fa-check"></i> Sicherheitsupdates</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span class="question-text"><i class="fas fa-edit"></i> Kann ich die Website selbst ändern?</span>
+                                <span class="question-icon"><i class="fas fa-chevron-down"></i></span>
+                            </button>
+                            <div class="faq-answer">
+                                <div class="answer-content">
+                                    <p>Ja, ab dem WACHSTUM-Paket erhalten Sie Zugang zu WordPress CMS. Sie können:</p>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Texte selbst bearbeiten</li>
+                                        <li><i class="fas fa-check"></i> Bilder austauschen</li>
+                                        <li><i class="fas fa-check"></i> Neue Seiten anlegen</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span class="question-text"><i class="fas fa-clock"></i> Wie lange dauert die Erstellung?</span>
+                                <span class="question-icon"><i class="fas fa-chevron-down"></i></span>
+                            </button>
+                            <div class="faq-answer">
+                                <div class="answer-content">
+                                    <div class="delivery-times">
+                                        <div class="delivery-item">
+                                            <span class="package-badge bronze">🥉 EINSTIEG</span>
+                                            <span class="delivery-time">5-7 Werktage</span>
+                                        </div>
+                                        <div class="delivery-item">
+                                            <span class="package-badge silver">🥈 WACHSTUM</span>
+                                            <span class="delivery-time">7-10 Werktage</span>
+                                        </div>
+                                        <div class="delivery-item">
+                                            <span class="package-badge gold">🥇 ERFOLG</span>
+                                            <span class="delivery-time">2 Wochen</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span class="question-text"><i class="fas fa-headset"></i> Wie erreiche ich den Support?</span>
+                                <span class="question-icon"><i class="fas fa-chevron-down"></i></span>
+                            </button>
+                            <div class="faq-answer">
+                                <div class="answer-content">
+                                    <div class="contact-methods">
+                                        <div class="contact-method">
+                                            <i class="fas fa-phone"></i>
+                                            <div><strong>Telefon:</strong> 030 1234 5678</div>
+                                        </div>
+                                        <div class="contact-method">
+                                            <i class="fas fa-envelope"></i>
+                                            <div><strong>E-Mail:</strong> support@webtrust-builders.de</div>
+                                        </div>
+                                        <div class="contact-method">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <div><strong>WhatsApp:</strong> 0176 1234 5678</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-contact" data-aos="fade-up">
+                    <div class="faq-contact-content">
+                        <h3>Haben Sie noch Fragen?</h3>
+                        <p>Wir sind für Sie da! Kontaktieren Sie uns für ein kostenloses Beratungsgespräch.</p>
+                        <a href="#kontakt" class="btn btn-primary btn-large">
+                            <i class="fas fa-comments"></i>
+                            Jetzt Fragen stellen
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="kontakt-section" id="kontakt">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">Kontakt</span>
+                    <h2 class="section-title">Sprechen Sie mit uns</h2>
+                    <p class="section-description">
+                        Vereinbaren Sie ein kostenloses Beratungsgespräch. Wir antworten innerhalb von 24 Stunden.
+                    </p>
+                </div>
+
+                <div class="kontakt-grid">
+                    <div class="kontakt-form-wrapper" data-aos="fade-right">
+                        <form class="kontakt-form" id="kontaktForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Ihr Name *</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-user"></i>
+                                        <input type="text" id="name" name="name" required placeholder="Max Mustermann">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-Mail *</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-envelope"></i>
+                                        <input type="email" id="email" name="email" required placeholder="max@beispiel.de">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Telefon</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-phone"></i>
+                                        <input type="tel" id="phone" name="phone" placeholder="030 1234 5678">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="company">Unternehmen</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-building"></i>
+                                        <input type="text" id="company" name="company" placeholder="Ihr Unternehmen">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="interest">Ich interessiere mich für *</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-box-open"></i>
+                                    <select id="interest" name="interest" required>
+                                        <option value="">Bitte wählen</option>
+                                        <option value="einstieg">🥉 EINSTIEG Paket</option>
+                                        <option value="wachstum">🥈 WACHSTUM Paket</option>
+                                        <option value="erfolg">🥇 ERFOLG Paket</option>
+                                        <option value="individual">Individuelle Lösung</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Ihre Nachricht</label>
+                                <div class="input-wrapper textarea-wrapper">
+                                    <i class="fas fa-comment-alt"></i>
+                                    <textarea id="message" name="message" rows="5" placeholder="Erzählen Sie uns von Ihrem Projekt..."></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group dsgvo">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="dsgvo" required>
+                                    <span class="checkbox-custom"><i class="fas fa-check"></i></span>
+                                    <span class="checkbox-text">
+                                        Ich habe die <a href="#">Datenschutzerklärung</a> zur Kenntnis genommen. 
+                                        Ich stimme zu, dass meine Angaben zur Kontaktaufnahme gespeichert werden. *
+                                    </span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large btn-submit">
+                                <span class="btn-text">Nachricht senden</span>
+                                <i class="fas fa-paper-plane btn-icon"></i>
+                                <div class="btn-loader"><i class="fas fa-spinner fa-spin"></i></div>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="kontakt-info" data-aos="fade-left">
+                        <div class="info-card">
+                            <h3><i class="fas fa-address-card"></i> Direkter Kontakt</h3>
+
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div class="info-content">
+                                    <h4>Besuchen Sie uns</h4>
+                                    <p>WebTrust Builders GmbH<br>Musterstraße 123<br>10115 Berlin</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                                <div class="info-content">
+                                    <h4>Rufen Sie an</h4>
+                                    <p><a href="tel:03012345678">030 1234 5678</a></p>
+                                    <span class="info-meta">Mo-Fr, 9-18 Uhr</span>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="info-content">
+                                    <h4>Schreiben Sie uns</h4>
+                                    <p><a href="mailto:info@webtrust-builders.de">info@webtrust-builders.de</a></p>
+                                    <span class="info-meta">Antwort innerhalb 24h</span>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fab fa-whatsapp"></i></div>
+                                <div class="info-content">
+                                    <h4>WhatsApp</h4>
+                                    <p><a href="https://wa.me/4917612345678" target="_blank">0176 1234 5678</a></p>
+                                    <span class="info-meta">Auch am Wochenende</span>
+                                </div>
+                            </div>
+
+                            <div class="social-media">
+                                <h4>Folgen Sie uns</h4>
+                                <div class="social-icons">
+                                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="social-icon"><i class="fab fa-xing"></i></a>
+                                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="business-hours">
+                                <h4><i class="fas fa-clock"></i> Geschäftszeiten</h4>
+                                <ul>
+                                    <li><span>Mo-Fr:</span> <strong>9:00 - 18:00</strong></li>
+                                    <li><span>Sa:</span> <strong>10:00 - 14:00</strong></li>
+                                    <li><span>So:</span> <strong>Geschlossen</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-box" data-aos="zoom-in">
+                    <div class="cta-content">
+                        <h2>Bereit für Ihre neue Website?</h2>
+                        <p>Lassen Sie uns gemeinsam Ihr Projekt besprechen. Das erste Gespräch ist kostenlos.</p>
+                        <div class="cta-buttons">
+                            <a href="#kontakt" class="btn btn-white btn-large">
+                                <i class="fas fa-calendar-check"></i>
+                                Termin vereinbaren
+                            </a>
+                            <a href="tel:03012345678" class="btn btn-outline-white btn-large">
+                                <i class="fas fa-phone"></i>
+                                030 1234 5678
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">🛡️</div>
+                        <span class="logo-text">WebTrust<span class="text-primary">Builders</span></span>
+                    </div>
+                    <p class="footer-description">
+                        Ihr vertrauensvoller Partner für DSGVO-konforme Websites in Berlin.
+                    </p>
+                    <div class="footer-trust">
+                        <span class="trust-item"><i class="fas fa-check-circle"></i> DSGVO-zertifiziert</span>
+                        <span class="trust-item"><i class="fas fa-map-marker-alt"></i> Made in Berlin</span>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Leistungen</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Webdesign</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> DSGVO & Recht</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Lokales SEO</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Preise</h4>
+                    <ul class="footer-links">
+                        <li><a href="#preise"><i class="fas fa-chevron-right"></i> 🥉 EINSTIEG</a></li>
+                        <li><a href="#preise"><i class="fas fa-chevron-right"></i> 🥈 WACHSTUM</a></li>
+                        <li><a href="#preise"><i class="fas fa-chevron-right"></i> 🥇 ERFOLG</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Rechtliches</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Impressum</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Datenschutz</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> AGB</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="newsletter-text">Tipps für Ihre Website direkt in Ihr Postfach.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <div class="input-group">
+                            <input type="email" placeholder="Ihre E-Mail" required>
+                            <button type="submit" class="btn-newsletter"><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2024 WebTrust Builders GmbH. Alle Rechte vorbehalten.
+                </div>
+                <div class="footer-bottom-links">
+                    <span>Made with <i class="fas fa-heart"></i> in Berlin</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="notificationContainer"></div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
