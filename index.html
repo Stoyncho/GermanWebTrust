@@ -306,15 +306,6 @@
                     </p>
                 </div>
 
-                <div class="pricing-toggle" data-aos="fade-up">
-                    <span class="toggle-label" id="monthlyLabel">Monatlich</span>
-                    <label class="switch">
-                        <input type="checkbox" id="pricingToggle">
-                        <span class="slider round"></span>
-                    </label>
-                    <span class="toggle-label active" id="yearlyLabel">Jährlich <span class="savings">-20%</span></span>
-                </div>
-
                 <div class="pricing-grid">
                     <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="pricing-badge">Für Starter</div>
@@ -675,86 +666,132 @@
 
                 <div class="kontakt-grid">
                     <div class="kontakt-form-wrapper" data-aos="fade-right">
-                        <form class="kontakt-form" id="kontaktForm">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="name">Ihr Name *</label>
-                                    <div class="input-wrapper">
-                                        <i class="fas fa-user"></i>
-                                        <input type="text" id="name" name="name" required placeholder="Max Mustermann">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">E-Mail *</label>
-                                    <div class="input-wrapper">
-                                        <i class="fas fa-envelope"></i>
-                                        <input type="email" id="email" name="email" required placeholder="max@beispiel.de">
-                                    </div>
-                                </div>
-                            </div>
+                       <!-- НОВА FORMSPREE ФОРМА -->
+<form 
+    class="kontakt-form" 
+    id="kontaktForm"
+    action="https://formspree.io/f/mwvndpzp"
+    method="POST"
+>
+    <!-- Име -->
+    <div class="form-group">
+        <label for="name">Ihr Name *</label>
+        <div class="input-wrapper">
+            <i class="fas fa-user"></i>
+            <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                required 
+                placeholder="Max Mustermann"
+            >
+        </div>
+    </div>
 
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="phone">Telefon</label>
-                                    <div class="input-wrapper">
-                                        <i class="fas fa-phone"></i>
-                                        <input type="tel" id="phone" name="phone" placeholder="030 1234 5678">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="company">Unternehmen</label>
-                                    <div class="input-wrapper">
-                                        <i class="fas fa-building"></i>
-                                        <input type="text" id="company" name="company" placeholder="Ihr Unternehmen">
-                                    </div>
-                                </div>
-                            </div>
+    <!-- Email (задължителен за Formspree) -->
+    <div class="form-group">
+        <label for="email">Ihre E-Mail *</label>
+        <div class="input-wrapper">
+            <i class="fas fa-envelope"></i>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required 
+                placeholder="max@beispiel.de"
+            >
+        </div>
+    </div>
 
-                            <div class="form-group">
-                                <label for="interest">Ich interessiere mich für *</label>
-                                <div class="input-wrapper">
-                                    <i class="fas fa-box-open"></i>
-                                    <select id="interest" name="interest" required>
-                                        <option value="">Bitte wählen</option>
-                                        <option value="einstieg">🥉 EINSTIEG Paket</option>
-                                        <option value="wachstum">🥈 WACHSTUM Paket</option>
-                                        <option value="erfolg">🥇 ERFOLG Paket</option>
-                                        <option value="individual">Individuelle Lösung</option>
-                                    </select>
-                                </div>
-                            </div>
+    <!-- Телефон (опционално) -->
+    <div class="form-group">
+        <label for="phone">Telefon</label>
+        <div class="input-wrapper">
+            <i class="fas fa-phone"></i>
+            <input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                placeholder="030 1234 5678"
+            >
+        </div>
+    </div>
 
-                            <div class="form-group">
-                                <label for="message">Ihre Nachricht</label>
-                                <div class="input-wrapper textarea-wrapper">
-                                    <i class="fas fa-comment-alt"></i>
-                                    <textarea id="message" name="message" rows="5" placeholder="Erzählen Sie uns von Ihrem Projekt..."></textarea>
-                                </div>
-                            </div>
+    <!-- Фирма (опционално) -->
+    <div class="form-group">
+        <label for="company">Unternehmen</label>
+        <div class="input-wrapper">
+            <i class="fas fa-building"></i>
+            <input 
+                type="text" 
+                id="company" 
+                name="company" 
+                placeholder="Ihr Unternehmen"
+            >
+        </div>
+    </div>
 
-                            <div class="form-group dsgvo">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="dsgvo" required>
-                                    <span class="checkbox-custom"><i class="fas fa-check"></i></span>
-                                    <span class="checkbox-text">
-                                        Ich habe die <a href="#">Datenschutzerklärung</a> zur Kenntnis genommen. 
-                                        Ich stimme zu, dass meine Angaben zur Kontaktaufnahme gespeichert werden. *
-                                    </span>
-                                </label>
-                            </div>
+    <!-- Избор на пакет -->
+    <div class="form-group">
+        <label for="interest">Gewünschtes Paket *</label>
+        <div class="input-wrapper">
+            <i class="fas fa-box-open"></i>
+            <select id="interest" name="paket" required>
+                <option value="">Bitte wählen</option>
+                <option value="Einstieg">🥉 EINSTIEG (€1.490)</option>
+                <option value="Wachstum">🥈 WACHSTUM (€2.990)</option>
+                <option value="Erfolg">🥇 ERFOLG (€4.990)</option>
+                <option value="Individuell">💎 Individuelle Lösung</option>
+            </select>
+        </div>
+    </div>
 
-                            <button type="submit" class="btn btn-primary btn-large btn-submit">
-                                <span class="btn-text">Nachricht senden</span>
-                                <i class="fas fa-paper-plane btn-icon"></i>
-                                <div class="btn-loader"><i class="fas fa-spinner fa-spin"></i></div>
-                            </button>
-                        </form>
+    <!-- Съобщение (задължително за Formspree) -->
+    <div class="form-group">
+        <label for="message">Ihre Nachricht *</label>
+        <div class="input-wrapper textarea-wrapper">
+            <i class="fas fa-comment-alt"></i>
+            <textarea 
+                id="message" 
+                name="message" 
+                rows="5" 
+                required
+                placeholder="Beschreiben Sie Ihr Projekt..."
+            ></textarea>
+        </div>
+    </div>
+
+    <!-- DSGVO Checkbox (задължителна в Германия) -->
+    <div class="form-group dsgvo">
+        <label class="checkbox-label">
+            <input type="checkbox" name="dsgvo" required>
+            <span class="checkbox-custom">
+                <i class="fas fa-check"></i>
+            </span>
+            <span class="checkbox-text">
+                Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu. *
+            </span>
+        </label>
+    </div>
+
+    <!-- Скрито поле за _next (редирект след изпращане) -->
+    <input type="hidden" name="_next" value="https://webtrust-builders.de/danke.html">
+
+    <!-- Бутон за изпращане -->
+    <button type="submit" class="btn btn-primary btn-large btn-submit">
+        <span class="btn-text">Nachricht senden</span>
+        <i class="fas fa-paper-plane btn-icon"></i>
+        <div class="btn-loader">
+            <i class="fas fa-spinner fa-spin"></i>
+        </div>
+    </button>
+</form>
+
                     </div>
 
                     <div class="kontakt-info" data-aos="fade-left">
                         <div class="info-card">
                             <h3><i class="fas fa-address-card"></i> Direkter Kontakt</h3>
-
                             <div class="info-item">
                                 <div class="info-icon"><i class="fas fa-envelope"></i></div>
                                 <div class="info-content">
@@ -763,7 +800,7 @@
                                     <span class="info-meta">Antwort innerhalb 24h</span>
                                 </div>
                             </div>
-
+                            
                             <div class="social-media">
                                 <h4>Folgen Sie uns</h4>
                                 <div class="social-icons">

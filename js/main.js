@@ -257,60 +257,72 @@ function initFAQ() {
     });
 }
 
-// Form Handling
+// Form Handling - Formspree Integration
 function initForms() {
-    // Contact Form
     const contactForm = document.getElementById('kontaktForm');
+    
     if (contactForm) {
+        // Formspree работи с AJAX за по-добър UX
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-
+            
             const submitBtn = contactForm.querySelector('.btn-submit');
             const formData = new FormData(contactForm);
-
-            // Validation
-            const name = formData.get('name');
+            
+            // Валидация преди изпращане
             const email = formData.get('email');
-            const interest = formData.get('interest');
+            const message = formData.get('message');
             const dsgvo = formData.get('dsgvo');
-
-            if (!name || !email || !interest || !dsgvo) {
+            
+            if (!email || !message || !dsgvo) {
                 showNotification('Bitte füllen Sie alle Pflichtfelder aus.', 'error');
                 return;
             }
-
-            // Email validation
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                showNotification('Bitte geben Sie eine gültige E-Mail-Adresse ein.', 'error');
-                return;
-            }
-
-            // Show loading state
+            
+            // Покажи loading състояние
             submitBtn.classList.add('loading');
-
-            // Simulate form submission
-            setTimeout(() => {
+            
+            // Изпрати към Formspree чрез AJAX
+            fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
                 submitBtn.classList.remove('loading');
-                showNotification('Vielen Dank! Wir melden uns innerhalb von 24 Stunden.', 'success');
-                contactForm.reset();
-            }, 2000);
+                
+                if (response.ok) {
+                    showNotification('✅ Vielen Dank! Ihre Nachricht wurde gesendet. Wir melden uns innerhalb von 24 Stunden.', 'success');
+                    contactForm.reset();
+                    
+                    // Опционално: редирект към страница за благодарност
+                    // window.location.href = 'danke.html';
+                } else {
+                    showNotification('❌ Es gab ein Problem. Bitte versuchen Sie es später erneut.', 'error');
+                }
+            })
+            .catch(error => {
+                submitBtn.classList.remove('loading');
+                showNotification('❌ Fehler beim Senden. Bitte prüfen Sie Ihre Internetverbindung.', 'error');
+                console.error('Formspree error:', error);
+            });
         });
     }
-
-    // Newsletter Form
+    
+    // Newsletter форма (остава същата)
     const newsletterForm = document.getElementById('newsletterForm');
     if (newsletterForm) {
         newsletterForm.addEventListener('submit', function(e) {
             e.preventDefault();
-
             const email = newsletterForm.querySelector('input[type="email"]').value;
-
+            
             if (!email) {
                 showNotification('Bitte geben Sie Ihre E-Mail-Adresse ein.', 'error');
                 return;
             }
-
+            
             showNotification('Vielen Dank für Ihre Anmeldung!', 'success');
             newsletterForm.reset();
         });

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vielen Dank! | WebTrust Builders</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .thank-you-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--off-white) 0%, #FFFFFF 100%);
+            text-align: center;
+            padding: 2rem;
+        }
+        .thank-you-box {
+            background: var(--white);
+            padding: 4rem 3rem;
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-xl);
+            max-width: 600px;
+            width: 100%;
+        }
+        .thank-you-icon {
+            font-size: 5rem;
+            color: var(--success);
+            margin-bottom: 2rem;
+        }
+        .thank-you-box h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--black);
+        }
+        .thank-you-box p {
+            color: var(--gray);
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+        .next-steps {
+            background: var(--off-white);
+            padding: 1.5rem;
+            border-radius: var(--radius-lg);
+            margin: 2rem 0;
+            text-align: left;
+        }
+        .next-steps h3 {
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+            color: var(--black);
+        }
+        .next-steps ul {
+            list-style: none;
+        }
+        .next-steps li {
+            padding: 0.5rem 0;
+            color: var(--gray);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .next-steps li i {
+            color: var(--success);
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-page">
+        <div class="thank-you-box">
+            <div class="thank-you-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h1>Vielen Dank für Ihre Anfrage!</h1>
+            <p>Wir haben Ihre Nachricht erfolgreich erhalten. Unser Team wird sich innerhalb von <strong>24 Stunden</strong> mit Ihnen in Verbindung setzen.</p>
+            
+            <div class="next-steps">
+                <h3>Was passiert als Nächstes?</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> Sie erhalten eine Bestätigungs-E-Mail</li>
+                    <li><i class="fas fa-phone"></i> Wir rufen Sie für ein kurzes Gespräch an</li>
+                    <li><i class="fas fa-calendar"></i> Wir vereinbaren einen Termin zur Beratung</li>
+                    <li><i class="fas fa-rocket"></i> Start Ihres Projekts</li>
+                </ul>
+            </div>
+            
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="index.html" class="btn btn-primary btn-large">
+                    <i class="fas fa-home"></i>
+                    Zurück zur Startseite
+                </a>
+                <a href="tel:03012345678" class="btn btn-outline btn-large">
+                    <i class="fas fa-phone"></i>
+                    Direkt anrufen
+                </a>
+            </div>
+            
+            <p style="margin-top: 2rem; font-size: 0.875rem; color: var(--gray);">
+                Haben Sie Fragen? Schreiben Sie uns an <a href="mailto:info@webtrust-builders.de" style="color: var(--primary);">info@webtrust-builders.de</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
